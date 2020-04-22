@@ -1,11 +1,13 @@
 # FreeCaravan
-Open source implementation of Fallout Caravan card game.
+Open source implementation of Fallout Caravan card game. 
+
+Uses free game content and add features like deck editing and multiplayer.
 
 # Requeriments
 
 -Irchlight irrKlang.NET4
 
--Mono sqlite
+-Mono sqlite 3
 
 # License
 
