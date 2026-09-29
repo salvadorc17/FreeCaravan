@@ -297,8 +297,8 @@ namespace FreeCaravan
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.60248F));
             this.tableLayoutPanel1.Controls.Add(this.listView1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 57);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 74);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -310,6 +310,7 @@ namespace FreeCaravan
             // 
             this.listView1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.HideSelection = false;
             this.listView1.LargeImageList = this.imageList1;
             this.listView1.Location = new System.Drawing.Point(582, 6);
             this.listView1.MultiSelect = false;
@@ -336,7 +337,6 @@ namespace FreeCaravan
             this.tableLayoutPanel2.Controls.Add(this.pictureBox42, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox41, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox40, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox6, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox5, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 2, 0);
@@ -371,6 +371,7 @@ namespace FreeCaravan
             this.tableLayoutPanel2.Controls.Add(this.pictureBox37, 4, 4);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox38, 5, 4);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox39, 6, 4);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox6, 5, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
@@ -387,7 +388,7 @@ namespace FreeCaravan
             // pictureBox46
             // 
             this.pictureBox46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox46.Location = new System.Drawing.Point(471, 386);
+            this.pictureBox46.Location = new System.Drawing.Point(3, 386);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(54, 68);
             this.pictureBox46.TabIndex = 42;
@@ -396,7 +397,7 @@ namespace FreeCaravan
             // pictureBox45
             // 
             this.pictureBox45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox45.Location = new System.Drawing.Point(315, 386);
+            this.pictureBox45.Location = new System.Drawing.Point(393, 386);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(54, 68);
             this.pictureBox45.TabIndex = 41;
@@ -405,7 +406,7 @@ namespace FreeCaravan
             // pictureBox44
             // 
             this.pictureBox44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox44.Location = new System.Drawing.Point(237, 386);
+            this.pictureBox44.Location = new System.Drawing.Point(471, 386);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(54, 68);
             this.pictureBox44.TabIndex = 40;
@@ -414,7 +415,7 @@ namespace FreeCaravan
             // pictureBox43
             // 
             this.pictureBox43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox43.Location = new System.Drawing.Point(159, 386);
+            this.pictureBox43.Location = new System.Drawing.Point(81, 386);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(54, 68);
             this.pictureBox43.TabIndex = 39;
@@ -423,7 +424,7 @@ namespace FreeCaravan
             // pictureBox42
             // 
             this.pictureBox42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox42.Location = new System.Drawing.Point(81, 386);
+            this.pictureBox42.Location = new System.Drawing.Point(159, 386);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(54, 68);
             this.pictureBox42.TabIndex = 38;
@@ -432,7 +433,7 @@ namespace FreeCaravan
             // pictureBox41
             // 
             this.pictureBox41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox41.Location = new System.Drawing.Point(3, 386);
+            this.pictureBox41.Location = new System.Drawing.Point(237, 386);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(54, 68);
             this.pictureBox41.TabIndex = 37;
@@ -441,7 +442,7 @@ namespace FreeCaravan
             // pictureBox40
             // 
             this.pictureBox40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox40.Location = new System.Drawing.Point(393, 386);
+            this.pictureBox40.Location = new System.Drawing.Point(315, 386);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(54, 68);
             this.pictureBox40.TabIndex = 36;
@@ -827,14 +828,14 @@ namespace FreeCaravan
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(760, 28);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(760, 33);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(5, 5);
+            this.button5.Location = new System.Drawing.Point(188, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(81, 18);
+            this.button5.Size = new System.Drawing.Size(76, 23);
             this.button5.TabIndex = 16;
             this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = true;
@@ -844,10 +845,10 @@ namespace FreeCaravan
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(647, 2);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 24);
+            this.label11.Size = new System.Drawing.Size(108, 29);
             this.label11.TabIndex = 15;
             this.label11.Text = "00";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -855,10 +856,10 @@ namespace FreeCaravan
             // label8
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(540, 2);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 24);
+            this.label8.Size = new System.Drawing.Size(33, 29);
             this.label8.TabIndex = 12;
             this.label8.Text = "00";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -866,10 +867,10 @@ namespace FreeCaravan
             // label7
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(467, 2);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 24);
+            this.label7.Size = new System.Drawing.Size(31, 29);
             this.label7.TabIndex = 10;
             this.label7.Text = "00";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -877,10 +878,10 @@ namespace FreeCaravan
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(394, 2);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 24);
+            this.label6.Size = new System.Drawing.Size(30, 29);
             this.label6.TabIndex = 8;
             this.label6.Text = "00";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -888,10 +889,10 @@ namespace FreeCaravan
             // label5
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(309, 2);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 24);
+            this.label5.Size = new System.Drawing.Size(32, 29);
             this.label5.TabIndex = 6;
             this.label5.Text = "00";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -899,10 +900,10 @@ namespace FreeCaravan
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(94, 2);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 24);
+            this.label4.Size = new System.Drawing.Size(86, 29);
             this.label4.TabIndex = 4;
             this.label4.Text = "Cards:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -910,10 +911,10 @@ namespace FreeCaravan
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(188, 2);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(5, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 24);
+            this.label3.Size = new System.Drawing.Size(81, 29);
             this.label3.TabIndex = 3;
             this.label3.Text = "00";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -922,10 +923,10 @@ namespace FreeCaravan
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(581, 2);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 24);
+            this.label9.Size = new System.Drawing.Size(58, 29);
             this.label9.TabIndex = 13;
             this.label9.Text = "Total:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -950,12 +951,12 @@ namespace FreeCaravan
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.comboBox1, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.button1, 4, 0);
-            this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 29);
+            this.tableLayoutPanel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 34);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(760, 27);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(760, 34);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // button4
@@ -963,7 +964,7 @@ namespace FreeCaravan
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Location = new System.Drawing.Point(691, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 17);
+            this.button4.Size = new System.Drawing.Size(64, 24);
             this.button4.TabIndex = 7;
             this.button4.Text = "Sort";
             this.button4.UseVisualStyleBackColor = true;
@@ -974,7 +975,7 @@ namespace FreeCaravan
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Location = new System.Drawing.Point(605, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 17);
+            this.button3.Size = new System.Drawing.Size(78, 24);
             this.button3.TabIndex = 6;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
@@ -984,7 +985,7 @@ namespace FreeCaravan
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Location = new System.Drawing.Point(512, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 17);
+            this.button2.Size = new System.Drawing.Size(85, 24);
             this.button2.TabIndex = 5;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
@@ -994,7 +995,7 @@ namespace FreeCaravan
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(205, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 23);
+            this.label2.Size = new System.Drawing.Size(62, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Decks:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1004,7 +1005,7 @@ namespace FreeCaravan
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(5, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 23);
+            this.label1.Size = new System.Drawing.Size(52, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Deck Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1013,7 +1014,7 @@ namespace FreeCaravan
             // 
             this.textBox1.Location = new System.Drawing.Point(65, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
+            this.textBox1.Size = new System.Drawing.Size(132, 20);
             this.textBox1.TabIndex = 1;
             // 
             // comboBox1
@@ -1021,7 +1022,7 @@ namespace FreeCaravan
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(275, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(134, 19);
+            this.comboBox1.Size = new System.Drawing.Size(134, 21);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -1030,7 +1031,7 @@ namespace FreeCaravan
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(420, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 17);
+            this.button1.Size = new System.Drawing.Size(84, 24);
             this.button1.TabIndex = 4;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
@@ -1570,7 +1571,7 @@ namespace FreeCaravan
             this.BackgroundImage = null;
             this.Hide();
             Main.panel1.Show();
-            Main.BackgroundImage = Image.FromFile("textures/bg.jpg");
+            Main.BackgroundImage = BackgroundImage;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

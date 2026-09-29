@@ -598,7 +598,7 @@ namespace FreeCaravan
             this.BackgroundImage = null;
             this.Hide();
             Main.panel1.Show();
-            Main.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "textures/bg.jpg");
+            Main.BackgroundImage = BackgroundImage;
         }
 
 
