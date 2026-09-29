@@ -16,6 +16,7 @@ namespace FreeCaravan
         private List<Card> PCards, OCards;
         private List<string> Cardtexts;
         private string playerdeck, optdeck;
+        private int Turn;
         private Main Main;    
         private ISoundEngine soundEngine;
         private Panel panel1;
@@ -45,6 +46,7 @@ namespace FreeCaravan
 		{
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -52,7 +54,6 @@ namespace FreeCaravan
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -84,6 +85,19 @@ namespace FreeCaravan
             this.groupBox1.Size = new System.Drawing.Size(339, 329);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(213, 249);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(92, 20);
+            this.numericUpDown1.TabIndex = 19;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // listBox1
             // 
@@ -125,7 +139,7 @@ namespace FreeCaravan
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(26, 252);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 13);
@@ -135,7 +149,7 @@ namespace FreeCaravan
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 13);
@@ -145,7 +159,7 @@ namespace FreeCaravan
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(68, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 13);
@@ -153,19 +167,12 @@ namespace FreeCaravan
             this.label1.Text = "Replay Game - Setup";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(213, 249);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(92, 20);
-            this.numericUpDown1.TabIndex = 19;
-            // 
-            // Lobby
+            // Replay
             // 
             this.ClientSize = new System.Drawing.Size(784, 549);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Lobby";
+            this.Name = "Replay";
             this.Load += new System.EventHandler(this.Lobby_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -194,24 +201,25 @@ namespace FreeCaravan
             this.BackgroundImage = null;
            
 
-
-
         }
 
-         
-
-
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            Turn = Convert.ToInt32(numericUpDown1.Value);
+        }
 
         private void Lobby_Load(object sender, EventArgs e)
         {
+
+            listBox1.Items.Clear();
+
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "textures/bg.jpg"))
                 this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "textures/bg.jpg");
 
 
             if (Directory.Exists("replay"))
             {
-                listBox1.Items.Clear();
-               
+                             
 
                 DirectoryInfo dir = new DirectoryInfo("replay");
                 foreach (FileInfo file in dir.GetFiles())
@@ -235,7 +243,7 @@ namespace FreeCaravan
             this.BackgroundImage = null;
             this.Hide();
             Main.panel1.Show();
-            Main.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "textures/bg.jpg");
+            Main.BackgroundImage = BackgroundImage;
         }
 
 

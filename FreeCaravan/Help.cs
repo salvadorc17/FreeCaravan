@@ -18,7 +18,8 @@ namespace FreeCaravan
        private Label label1;
        private Label label2;
        private ListBox listBox1;
-       private System.ComponentModel.IContainer components = null;
+        private Button button1;
+        private System.ComponentModel.IContainer components = null;
 
        #region WindowsForms
         protected override void Dispose(bool disposing)
@@ -40,6 +41,7 @@ namespace FreeCaravan
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,6 +71,7 @@ namespace FreeCaravan
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.label1);
@@ -80,7 +83,7 @@ namespace FreeCaravan
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(150, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(175, 17);
@@ -98,7 +101,7 @@ namespace FreeCaravan
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(150, 163);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 13);
@@ -108,7 +111,7 @@ namespace FreeCaravan
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(8, 179);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 147);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(458, 194);
             this.richTextBox1.TabIndex = 0;
@@ -123,6 +126,15 @@ namespace FreeCaravan
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Documentation";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(384, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 22);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Help
             // 
